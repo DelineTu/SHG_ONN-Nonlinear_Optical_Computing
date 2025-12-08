@@ -17,9 +17,10 @@ It demonstrates a full photonic computing pipeline that couples:
   - The experiment-calibrated twin yields higher downstream task accuracy and better stability, because it embeds real-system distortions and noise.
   - The physics-model twin trains faster but yields lower accuracy in final performance, reflecting the mismatch between ideal physics and physical hardware.
 
-Using this framework, I successfully applied the SHG-ONN to a VOWEL speech-recognition task, achieving **~85% test accuracy**, validating the scalability, robustness, and trainability of nonlinear optical processors.
+This SHG-ONN was successfully applied to a VOWEL speech-recognition task, achieving **~85% test accuracy**, validating the scalability, robustness, and trainability of nonlinear optical processors.
 
-## 1. Main Results：
+## 1. Main Results
+
 ### (A) VOWEL Classification - Training Curves
 <img width="1570" height="526" alt="image" src="https://github.com/user-attachments/assets/d9172802-8ce9-41be-be84-1571dae77fb8" />
 
@@ -48,7 +49,7 @@ All source code, key datasets, trained models, and performance visualization fig
 
 3. **Hybrid Training (PAT Pipeline)**: Adapted a Physics-Aware Training (PAT) pipeline where the `SHG_formula` model is used for **forward propagation**, and the differentiable `SHG_Digital_Model` is leveraged for **gradient-based backpropagation**.
 
-   A **Lagrangian-based regularization strategy** was introduced to stabilize training and enforce physically meaningful constraints.
+4. **Lagrangian-based regularization strategy** was introduced to stabilize training and enforce physically meaningful constraints.
 
 4. **Task Validation**: This hybrid framework successfully trained a VOWEL recognition task, achieving **85% classification accuracy**.
 
@@ -56,18 +57,17 @@ All source code, key datasets, trained models, and performance visualization fig
 
 ## Code Usage Instruction
 
-#### System Configuration
+## System Configuration
 
-Virtual environment setup, file path configurations, and wandb.ai process tracking methods are detailed in the file named **"environment configuration"**. The *debug_gpu_and_memory.ipynb* file  records debugging processes.
+Virtual environment setup, file path configurations, and wandb.ai process tracking methods are detailed in the file named **"environment configuration"**. The *debug_gpu_and_memory.ipynb* file documents the debugging process.
 
-The project was successfully run using the following configurations, as detailed in the report on resolving GPU compatibility issues:
+The project was run using the following configurations:
 
 - **GPU**: RTX 4060
 - **Python Version**: 3.7.4
 - **PyTorch Version**: 1.10.0 + CUDA 11.3
-- **Dependencies**: Please install the required packages listed in `requirements.txt`(pip install) and .
-- 
-
+- **Dependencies**: Please install the required packages listed in `requirements_pip.txt`(pip install) and  `requirements_conda.txt`(conda install).
+  
 **Note**: ".ipynb" files preserve previously run results for comparison. It is better to create new files for your own experiments.
 
 ## Running the Main Experiments
@@ -124,7 +124,7 @@ If you use this work in your research, please consider citing:
 
 This project includes modified material from the *Physics-Aware Training* (PAT) framework by the McMahon group at Cornell University (CC BY 4.0 license). I gratefully acknowledge the McMahon Group for developing the differentiable physical computing framework on which this project builds.
 
-- Reference:
+Reference:
 > Wright, L.G., Onodera, T., Stein, M.M. et al. Deep physical neural networks trained with backpropagation. _Nature_ **601**, 549–555 (2022). https://doi.org/10.1038/s41586-021-04223-6
 
 The code in this repository is released under the following license:
@@ -132,6 +132,7 @@ The code in this repository is released under the following license:
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 
 A copy of this license is given in this repository as license.txt.
+
 
 
 
