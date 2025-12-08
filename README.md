@@ -1,5 +1,7 @@
 <br/><br/>
-**Author: Hua Tu**
+<img src="https://cdn.jsdelivr.net/gh/DelineTu/Pictures/202501262100860.png" alt="image-20250126203544673" style="zoom:33%;" />
+<img width="2365" height="1274" alt="image" src="https://github.com/user-attachments/assets/68403b72-dde8-430b-a207-b3389b2f4d71" />
+
 
 This project implements an optical neural network (ONN) based on **second-harmonic generation (SHG)**  via differentiable digital twins and Lagrangian optimization, successfully applied to a VOWEL speech recognition task with 85% accuracy.
 
@@ -105,5 +107,6 @@ The code in this repository is released under the following license:
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 
 A copy of this license is given in this repository as [license.txt](https://github.com/mcmahon-lab/Physics-Aware-Training/blob/main/license.txt).
+
 
 
