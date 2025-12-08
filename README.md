@@ -1,5 +1,5 @@
 <br/><br/>
-# Hardware-in-the-loop training of nonlinear optical processors based on second-harmonic generation (SHG)
+# Hardware-in-the-loop training of nonlinear optical processors
 
 This repository contains a hardware-in-the-loop (HIL), end-to-end trainable nonlinear optical neural network (ONN) based on second-harmonic generation (SHG).
 It demonstrates a full photonic computing pipeline that couples:
@@ -132,6 +132,7 @@ The code in this repository is released under the following license:
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 
 A copy of this license is given in this repository as license.txt.
+
 
 
 
