@@ -125,13 +125,14 @@ This project includes modified material from the *Physics-Aware Training* (PAT) 
 Reference:
 > Wright, L.G., Onodera, T., Stein, M.M. et al. Deep physical neural networks trained with backpropagation. _Nature_ **601**, 549–555 (2022). https://doi.org/10.1038/s41586-021-04223-6
 
-## License and Acknowledgement
+## License
 
 The code in this repository is released under the following license:
 
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 
 A copy of this license is given in this repository as license.txt.
+
 
 
 
